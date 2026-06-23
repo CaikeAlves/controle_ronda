@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eaa58143-387f-4f68-aa07-e80bd5325661" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/controle_ronda.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.24116854177354E-32" />
+      <entry key="MS500" value="4.156867215810118E-7" />
+      <entry key="S2" value="0.02539168594966529" />
+      <entry key="S5" value="0.23009533807219137" />
+      <entry key="S10" value="0.4859630806414682" />
+      <entry key="S30" value="1.3737971842207837" />
+      <entry key="S60" value="3.3795465181275404" />
+      <entry key="M2" value="6.8333337582132385" />
+      <entry key="M5" value="13.142579990501964" />
+      <entry key="M10" value="18.57437862198729" />
+      <entry key="M15" value="21.666175633969967" />
+      <entry key="M30" value="26.833070038552858" />
+      <entry key="H1" value="31.387052664046067" />
+      <entry key="H2" value="34.66798905818398" />
+      <entry key="H4" value="36.67841418734309" />
+      <entry key="D1" value="38.58902089355756" />
+      <entry key="W1" value="38.94066495257379" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000005096" />
+      <entry key="S5" value="1.0000178568402365" />
+      <entry key="S10" value="1.0076528933941193" />
+      <entry key="S30" value="1.5582741293915872" />
+      <entry key="S60" value="3.0500151678794163" />
+      <entry key="M2" value="5.637824042029107" />
+      <entry key="M5" value="9.502295314937694" />
+      <entry key="M10" value="11.782819698841841" />
+      <entry key="M15" value="12.768661383646132" />
+      <entry key="M30" value="14.01212849748991" />
+      <entry key="H1" value="14.848481395039377" />
+      <entry key="H2" value="15.370750913345795" />
+      <entry key="H4" value="15.669623278591379" />
+      <entry key="D1" value="15.942509595521742" />
+      <entry key="W1" value="15.991724212415239" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="7.822948023336149E-4" />
+      <entry key="MS500" value="0.2391521097207171" />
+      <entry key="S2" value="0.7155852824483637" />
+      <entry key="S5" value="1.0593174432785217" />
+      <entry key="S10" value="1.3827296898053725" />
+      <entry key="S30" value="2.843740911319849" />
+      <entry key="S60" value="6.310336879841638" />
+      <entry key="M2" value="12.343831319624476" />
+      <entry key="M5" value="22.554081684699486" />
+      <entry key="M10" value="30.29994756822947" />
+      <entry key="M15" value="34.39304196122084" />
+      <entry key="M30" value="40.82166310635075" />
+      <entry key="H1" value="46.22269817067017" />
+      <entry key="H2" value="50.031948610774634" />
+      <entry key="H4" value="52.34452867237498" />
+      <entry key="D1" value="54.530927878159865" />
+      <entry key="W1" value="54.932302610676864" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FY1h4fLRfyFOKGTJs5N23Rq0Mk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Flask server.controle_ronda.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="controle_ronda" type="Python.FlaskServer">
+      <module name="controle_ronda" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eaa58143-387f-4f68-aa07-e80bd5325661" name="Changes" comment="" />
+      <created>1782237304871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782237304871</updated>
+      <workItem from="1782237305933" duration="181000" />
+      <workItem from="1782237533265" duration="19000" />
+      <workItem from="1782237567615" duration="3516000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/controle_ronda$controle_ronda.coverage" NAME="controle_ronda Coverage Results" MODIFIED="1782241820097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
