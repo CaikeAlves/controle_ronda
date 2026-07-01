@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Histórico</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <h1>Histórico de Rondas</h1>
+    {% for s in sessoes %}
+    <div class="card">
+        <p><strong>{{ s.data }}</strong> — {{ usuarios[s.usuario_id] }}</p>
+        <p>Início: {{ s.hora_inicio }} | Fim: {{ s.hora_fim if s.hora_fim else 'Em andamento' }}</p>
+        <p>Status: {% if s.concluida %}<span class="status-ok">Concluída</span>{% else %}<span class="status-pendente">Em andamento</span>{% endif %}</p>
+        <a href="/historico/{{ s.id }}" class="btn btn-primary">Ver Detalhes</a>
+        {% if not s.concluida %}
+        <a href="/sessao/{{ s.id }}" class="btn btn-warning">Continuar</a>
+        {% endif %}
+    </div>
+    {% endfor %}
+    <br><a href="/painel" class="btn btn-secondary">Voltar</a>
+    <a href="/apagar_sessoes_incompletas" class="btn btn-danger">Apagar Incompletas</a>
+
+</div>
+</body></html>

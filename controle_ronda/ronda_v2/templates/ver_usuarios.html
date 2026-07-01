@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Usuários</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <h1>Usuários</h1>
+    <a href="/adicionar_usuario" class="btn btn-primary">Adicionar Usuário</a>
+    {% for usuario in usuarios %}
+    <div class="card">
+        <p><strong>{{ usuario.nome }}</strong></p>
+        <a href="/editar_conta/{{ usuario.id }}" class="btn btn-warning">Editar</a>
+        <a href="/apagar_usuario/{{ usuario.id }}" class="btn btn-danger">Apagar</a>
+    </div>
+    {% endfor %}
+    <br><a href="/painel" class="btn btn-secondary">Voltar</a>
+</div>
+</body></html>

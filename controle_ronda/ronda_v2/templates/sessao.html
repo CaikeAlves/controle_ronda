@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Ronda em Andamento</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <h1>Ronda em Andamento</h1>
+    <p>Início: <strong>{{ sessao.hora_inicio }}</strong></p>
+    <br>
+    {% for ronda in rondas %}
+    <div class="card">
+        <p><strong>{{ ronda.nome }}</strong> — {{ ronda.tipo }}</p>
+        {% if ronda.id in rondas_registradas %}
+            <span class="status-ok">✅ Concluído</span>
+            {% if not sessao.concluida %}
+            <a href="/registro/{{ sessao.id }}/{{ ronda.id }}" class="btn btn-warning">Editar</a>
+            {% endif %}
+        {% else %}
+            {% if not sessao.concluida %}
+            <a href="/registro/{{ sessao.id }}/{{ ronda.id }}" class="btn btn-primary">Registrar</a>
+            {% else %}
+            <span class="status-pendente">❌ Não registrado</span>
+            {% endif %}
+        {% endif %}
+    </div>
+    {% endfor %}
+    <br>
+    {% if not sessao.concluida %}
+    <a href="/concluir_sessao/{{ sessao.id }}" class="btn btn-success">✔ Concluir Ronda</a>
+    {% else %}
+    <p><strong>Ronda concluída às {{ sessao.hora_fim }}</strong></p>
+    {% endif %}
+    <br><a href="/painel" class="btn btn-secondary">Painel</a>
+</div>
+</body></html>

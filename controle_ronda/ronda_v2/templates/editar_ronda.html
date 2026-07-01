@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Editar Ronda</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <h1>Editar Ronda</h1>
+    <form method="post">
+        <label>Tipo</label>
+        <select name="tipo">
+            <option value="posto" {% if ronda.tipo == 'posto' %}selected{% endif %}>Posto</option>
+            <option value="lacre" {% if ronda.tipo == 'lacre' %}selected{% endif %}>Lacre</option>
+            <option value="secao" {% if ronda.tipo == 'secao' %}selected{% endif %}>Seção</option>
+        </select>
+        <label>Nome</label>
+        <input type="text" name="nome" value="{{ ronda.nome }}">
+        <button class="btn btn-primary">Salvar</button>
+        <a href="/apagar_ronda/{{ ronda.id }}" class="btn btn-danger">Apagar</a>
+        <a href="/ver_rondas" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+</body></html>

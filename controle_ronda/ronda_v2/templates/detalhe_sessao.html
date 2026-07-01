@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Detalhe da Sessão</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <h1>Ronda de {{ usuario.nome }}</h1>
+    <p>Data: <strong>{{ sessao.data }}</strong></p>
+    <p>Início: <strong>{{ sessao.hora_inicio }}</strong> | Fim: <strong>{{ sessao.hora_fim if sessao.hora_fim else 'Em andamento' }}</strong></p>
+    <br>
+    <h2>Registros</h2>
+    {% for r in registros %}
+    <div class="card">
+        <p><strong>{{ rondas[r.ronda_id].nome }}</strong> — {{ rondas[r.ronda_id].tipo }}</p>
+        <p>Hora: {{ r.hora }}</p>
+        {% if r.nome_militar %}<p>Militar: {{ r.nome_militar }}</p>{% endif %}
+        {% if r.numero_lacre %}<p>Lacre: {{ r.numero_lacre }}</p>{% endif %}
+        {% if r.obs %}<p>Obs: {{ r.obs }}</p>{% endif %}
+        {% if r.foto %}<img src="/static/fotos/{{ r.foto }}" class="foto-preview">{% endif %}
+    </div>
+    {% endfor %}
+    <br><a href="/historico" class="btn btn-secondary">Voltar</a>
+</div>
+</body></html>

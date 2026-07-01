@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Ver Rondas</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <div class="topo">
+        <h1>Rondas Cadastradas</h1>
+        <a href="/adicionar_ronda" class="btn btn-primary">+ Nova</a>
+    </div>
+    {% for ronda in rondas %}
+    <div class="card">
+        <p><strong>{{ ronda.nome }}</strong> — {{ ronda.tipo }}</p>
+        <a href="/editar_ronda/{{ ronda.id }}" class="btn btn-warning">Editar</a>
+        <a href="/apagar_ronda/{{ ronda.id }}" class="btn btn-danger">Apagar</a>
+    </div>
+    {% endfor %}
+    <br><a href="/painel" class="btn btn-secondary">Voltar</a>
+</div>
+</body></html>

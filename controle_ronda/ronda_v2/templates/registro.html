@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Registrar Ponto</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <h1>{{ ronda.nome }}</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label>Foto</label>
+        <input type="file" name="foto" accept="image/*" capture="environment">
+        {% if registro and registro.foto %}
+        <img src="/static/fotos/{{ registro.foto }}" class="foto-preview">
+        {% endif %}
+        {% if ronda.tipo == 'posto' %}
+        <label>Nome do Militar</label>
+        <input type="text" name="nome_militar" value="{{ registro.nome_militar if registro else '' }}">
+        {% elif ronda.tipo == 'lacre' %}
+        <label>Número do Lacre</label>
+        <input type="text" name="numero_lacre" value="{{ registro.numero_lacre if registro else '' }}">
+        {% endif %}
+        <label>Observação (se não houver, escreva S/A)</label>
+        <input type="text" name="observacao" value="{{ registro.obs if registro else '' }}">
+        <button class="btn btn-primary">Salvar</button>
+        <a href="/sessao/{{ sessao_id }}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+</body></html>

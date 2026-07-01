@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Adicionar Ronda</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+    <h1>Adicionar Ronda</h1>
+    <form method="post">
+        <label>Tipo</label>
+        <select name="tipo">
+            <option value="posto">Posto</option>
+            <option value="lacre">Lacre</option>
+            <option value="secao">Seção</option>
+        </select>
+        <label>Nome da Ronda</label>
+        <input type="text" name="nome_da_ronda">
+        <button class="btn btn-primary">Salvar</button>
+        <a href= '/painel' class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+</body></html>
